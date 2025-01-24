@@ -7,9 +7,11 @@
 
 ### 1. Install the .NET SDK:
     On macOS: brew install --cask dotnet-sdk
+    
     Or, on macOS(x64) for VSCode: Download from https://download.visualstudio.microsoft.com/download/pr/2bda19b1-6389-4520-8e5e-363172398741/662eee446961503151bb78c29997933e/dotnet-sdk-9.0.102-osx-x64.pkg
-    On
+    
     Or, on macOS(ARM64) for VSCode: Download from https://download.visualstudio.microsoft.com/download/pr/96489126-b9ba-414a-a2d0-d8c5b61a22be/fe047e117e9cc43738ba2222f4769da2/dotnet-sdk-9.0.102-osx-arm64.pkg
+    
     On Windows/Linux: Download from https://dotnet.microsoft.com/download
 
 
