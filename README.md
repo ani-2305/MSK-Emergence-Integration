@@ -6,35 +6,35 @@
 ## Project Setup Instructions:
 
 ### 1. Install the .NET SDK:
-    - On macOS: `brew install --cask dotnet-sdk`
-    - On Windows/Linux: Download from https://dotnet.microsoft.com/download
+    On macOS: `brew install --cask dotnet-sdk`
+    On Windows/Linux: Download from https://dotnet.microsoft.com/download
 
 
 ### 2. Clone this GitHub repository:
    
-   `git clone https://github.com/yourusername/EmergenceWebOrchestrator.git`
+    `git clone https://github.com/yourusername/EmergenceWebOrchestrator.git`
    
-   `cd EmergenceWebOrchestrator`
+    `cd EmergenceWebOrchestrator`
 
 
 ### 3. Set your Emergence API key:
    
-   `export EMERGENCE_API_KEY="YOUR_API_KEY_HERE"`
+    `export EMERGENCE_API_KEY="YOUR_API_KEY_HERE"`
 
 
 ### 4. Restore dependencies:
 
-   `dotnet restore`
+    dotnet restore
 
 
 ### 5. Build the project:
    
-   `dotnet build`
+    dotnet build
 
 
 ### 6. Run the project:
     
-    `dotnet run`
+    dotnet run
 
 
 ## Integration:
