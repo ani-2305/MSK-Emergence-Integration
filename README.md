@@ -38,7 +38,7 @@
 
 
 ## Integration:
-If you already have a custom orchestrator that you've developed with Microsoft Semantic Kernel, simply take the EmergenceWebOrchestratorSkill.cs file and import it into your existing project directory. Make sure to adjust the "namespace" accordingly. Now, to use the Emergence AI Web Orchestrator in your project, follow the steps below:
+If you already have a custom orchestrator that you've developed with Microsoft Semantic Kernel, simply take the `EmergenceWebOrchestratorSkill.cs` file and import it into your existing project directory. Make sure to adjust the "namespace" accordingly. Now, to use the Emergence AI Web Orchestrator in your project, follow the steps below:
 
 ### 1. In your Orchestrator file (where you define your Orchestrator class), add the following at the top:
    
