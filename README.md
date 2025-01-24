@@ -9,7 +9,9 @@
     - On Windows/Linux: Download from https://dotnet.microsoft.com/download
 
 2. Clone this GitHub repository:
+   
    `git clone https://github.com/yourusername/EmergenceWebOrchestrator.git`
+   
    `cd EmergenceWebOrchestrator`
 
 4. Set your Emergence API key:
