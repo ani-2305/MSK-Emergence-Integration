@@ -6,20 +6,20 @@
 ## Project Setup Instructions:
 
 ### 1. Install the .NET SDK:
-    On macOS: `brew install --cask dotnet-sdk`
+    On macOS: brew install --cask dotnet-sdk
     On Windows/Linux: Download from https://dotnet.microsoft.com/download
 
 
 ### 2. Clone this GitHub repository:
    
-    `git clone https://github.com/yourusername/EmergenceWebOrchestrator.git`
+    git clone https://github.com/yourusername/EmergenceWebOrchestrator.git
    
-    `cd EmergenceWebOrchestrator`
+    cd EmergenceWebOrchestrator
 
 
 ### 3. Set your Emergence API key:
    
-    `export EMERGENCE_API_KEY="YOUR_API_KEY_HERE"`
+    export EMERGENCE_API_KEY="YOUR_API_KEY_HERE"
 
 
 ### 4. Restore dependencies:
@@ -42,27 +42,22 @@ If you already have a custom orchestrator that you've developed with Microsoft S
 
 ### 1. In your Orchestrator file (where you define your Orchestrator class), add the following at the top:
    
-   `using EmergenceWebOrchestrator;`
+    using EmergenceWebOrchestrator;
 
 
 ### 2. Within your "InitializeSkills()" function add the following lines below your existing skills:
    
-   `// Initialize Emergence Web Orchestrator Skill`
-
-   `string emergenceApiKey = Environment.GetEnvironmentVariable("EMERGENCE_API_KEY");`
-   
-   `var emergenceSkill = new EmergenceWebOrchestratorSkill(emergenceApiKey);`
-   
-   `_kernel.ImportPluginFromObject(emergenceSkill, "Emergence");`
+    // Initialize Emergence Web Orchestrator Skill
+    string emergenceApiKey = Environment.GetEnvironmentVariable("EMERGENCE_API_KEY");
+    var emergenceSkill = new EmergenceWebOrchestratorSkill(emergenceApiKey);
+    _kernel.ImportPluginFromObject(emergenceSkill, "Emergence");
 
 
 ### 3. Within your "RunOrchestration(string prompt)" function add the following lines below your other skill usages:
    
-   `// Use Emergence Web Orchestrator`
-   
-   `var webAutomationFunction = _kernel.Plugins["Emergence"]["WebAutomationTool"];`
-   
-   `var finalResult = await _kernel.InvokeAsync(webAutomationFunction, new KernelArguments { ["prompt"] = intermediateResult ToString() });`
+    // Use Emergence Web Orchestrator
+    var webAutomationFunction = _kernel.Plugins["Emergence"]["WebAutomationTool"];`
+    var finalResult = await _kernel.InvokeAsync(webAutomationFunction, new KernelArguments { ["prompt"] = intermediateResult ToString() });
 
 
 ### 7. Emergence AI's Web Orchestrator is now integrated as a skill/agent in your custom orchestrator!
