@@ -56,7 +56,7 @@ If you already have a custom orchestrator that you've developed with Microsoft S
 ### 3. Within your "RunOrchestration(string prompt)" function add the following lines below your other skill usages:
    
     // Use Emergence Web Orchestrator
-    var webAutomationFunction = _kernel.Plugins["Emergence"]["WebAutomationTool"];`
+    var webAutomationFunction = _kernel.Plugins["Emergence"]["WebAutomationTool"];
     var finalResult = await _kernel.InvokeAsync(webAutomationFunction, new KernelArguments { ["prompt"] = intermediateResult ToString() });
 
 
