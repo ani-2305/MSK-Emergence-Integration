@@ -12,7 +12,7 @@
 
 ### 2. Clone this GitHub repository:
    
-    git clone https://username:yourtoken@github.com/username/EmergenceWebOrchestrator.git
+    git clone https://username:yourtoken@github.com/username/MSK-Emergence-Integration.git
    
     cd EmergenceWebOrchestrator
 
