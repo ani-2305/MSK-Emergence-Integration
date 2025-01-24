@@ -60,4 +60,4 @@ If you already have a custom orchestrator that you've developed with Microsoft S
     var finalResult = await _kernel.InvokeAsync(webAutomationFunction, new KernelArguments { ["prompt"] = intermediateResult ToString() });
 
 
-### 7. Emergence AI's Web Orchestrator is now integrated as a skill/agent in your custom orchestrator!
+### 7. Emergence AI's Web Orchestrator is now integrated within your custom Orchestrator!
