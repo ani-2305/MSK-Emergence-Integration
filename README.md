@@ -17,7 +17,7 @@
 
 ### 2. Clone this GitHub repository:
    
-    git clone https://<your token>@github.com/<your username>/MSK-Emergence-Integration.git
+    git clone https://github.com/<your username>/MSK-Emergence-Integration.git
    
     cd EmergenceWebOrchestrator
 
